@@ -8,7 +8,7 @@ THGCD-Net detects land-cover change between two co-registered hyperspectral imag
 > M.Tech thesis, Department of Computer Science and Engineering, National Institute of Technology Calicut (2026).
 
 <!-- Export Figure 4.2 from the thesis to assets/architecture.png -->
-![THGCD-Net architecture](assets/architecture.png)
+![THGCD-Net architecture](assets/thgcd_arch.png)
 
 ---
 
@@ -38,7 +38,7 @@ $$\mathbf{c}_i = [\,\mathbf{h}^A_i \,\|\, \mathbf{h}^B_i \,\|\, \mathbf{h}^A_i -
 A three-layer MLP maps this to a per-node change gate $g_i \in [0, 1]$, applied independently at all three levels.
 
 <!-- Export Figure 4.3 from the thesis to assets/cteg.png -->
-![CTEG module](assets/cteg.png)
+![CTEG module](assets/CTEG_ARCH.png)
 
 **5. Cross-scale attention and gate fusion.** Coarse context is propagated to finer levels (Level 3 → 2 → 1), and gates from all levels are fused with learned weights into the change score map.
 
